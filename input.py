@@ -5,7 +5,7 @@ for i in range(1, 4):
     num = int(input(f"Enter your {i} favorite number: "))
     numbers.append(num)
 
-print(f"\nHello, {name.title()}! Let's explore your favorite numbers:")
+print(f"\nHello, {name.upper()}! Let's explore your favorite numbers:")
 
 even_odd = []
 for num in numbers:
