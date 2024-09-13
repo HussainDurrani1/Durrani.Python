@@ -75,3 +75,24 @@ else:
     print(f"The number {total_sum} is a composite number.")
 ```
 * Finally, based on whether is_prime is True or False, the script prints whether the sum is a prime number or composite.
+
+# Output
+```
+Enter your name: HUSSain
+Enter your 1 favorite number: 4
+Enter your 2 favorite number: 6
+Enter your 3 favorite number: 9
+
+Hello, HUSSAIN! Let's explore your favorite numbers:
+The number 4 is even.
+The number 6 is even.
+The number 9 is odd.
+
+Here are your numbers and their squares:
+The number 4 and its square: (4, 16)
+The number 6 and its square: (6, 36)
+The number 9 and its square: (9, 81)
+
+The sum of your favorite numbers is: 19
+Wow, 19 is a prime number!
+```
