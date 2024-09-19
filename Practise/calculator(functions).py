@@ -1,4 +1,3 @@
-
 def add(a, b):
     return a + b
 
@@ -20,36 +19,29 @@ def get_operation():
     print("3. Multiplication")
     print("4. Division")
 
-    choice = input("Enter choice (1/2/3/4/5): ")
-    return choice
+    return input("Enter choice (1/2/3/4): ")
 
 def perform_calculation():
-    choice = get_operation()
+    operation = get_operation()
 
-    if choice in ['1', '2', '3', '4', '5']:
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
 
-        if choice == '1':
-            print(f"{num1} + {num2} = {add(num1, num2)}")
-
-        elif choice == '2':
-            print(f"{num1} - {num2} = {subtract(num1, num2)}")
-
-        elif choice == '3':
-            print(f"{num1} * {num2} = {multiply(num1, num2)}")
-
-        elif choice == '4':
-            print(f"{num1} / {num2} = {divide(num1, num2)}")
-
+    if operation == '1':
+        print(f"{num1} + {num2} = {add(num1, num2)}")
+    elif operation == '2':
+        print(f"{num1} - {num2} = {subtract(num1, num2)}")
+    elif operation == '3':
+        print(f"{num1} * {num2} = {multiply(num1, num2)}")
+    elif operation == '4':
+        print(f"{num1} / {num2} = {divide(num1, num2)}")
     else:
         print("Invalid input. Please try again.")
 
 def calculator():
     while True:
         perform_calculation()
-        cont = input("Do you want to perform another calculation? (yes/no): ").lower()
-        if cont != 'yes':
+        if input("Do you want to perform another calculation? (yes/no): ").lower() != 'yes':
             print("Exiting the calculator. Goodbye!")
             break
 
